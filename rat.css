@@ -1,0 +1,248 @@
+*{
+    padding: 0px;
+ box-sizing: border-box;
+ margin: 0px;
+}
+body
+{
+  background-image: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80);
+  background-color: #ffffff;
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+html {
+    scroll-behavior: smooth;
+}
+header
+{ background-color:rgba(218, 134, 78, 0.733);;
+  display: flex;
+  position: sticky;
+  box-sizing: border-box;
+  height: fit-content;
+  font-family: 'Dancing Script', cursive;
+  font-size: 220%;
+  justify-content:space-between;
+  flex-direction: row;
+  padding-left: 2%;
+  box-shadow:2px 2px 5px 10px rgba(218, 134, 78, 0.733);;
+ margin-bottom: 10px;
+ width: 100%;
+ top:0px;
+}   
+
+header p
+{ 
+    margin: 3px;
+  text-align: center;
+  text-shadow: 4px 5px 5px rgb(241, 6, 6);
+}
+.but
+{ margin-top: 5px;
+  display: flex;
+justify-content: space-between;
+width:50%;
+
+}
+
+.products{
+  
+    display: flex;
+   flex-direction: column;
+    
+    
+    align-items: center;
+    height: 60%;
+width: 100%;
+    
+    
+}
+
+.same{
+    margin: 2px 2px 2px 2px;
+    width:60%;
+    border: 2px solid red;
+    margin: 2% 7% 4% 0%;   
+    justify-content: center;
+    height: 100%;
+    box-shadow: 5px 5px 10px 10px #000000;
+   border-radius: 10px; 
+   box-sizing: border-box;
+  }
+
+div.im{
+   width:100%;
+   object-fit:contain;
+   box-shadow: 5px 5px 10px 10px #000000;
+}
+div.write
+{  font-family: 'Odibee Sans', cursive;
+  margin-top: 8px;
+  text-align: center;
+  font-weight: 900;
+}
+a{
+  list-style: none;
+  text-decoration: none;
+  color: #ffffff;
+}
+a:hover
+{
+  font-size:large;
+}
+
+
+
+
+
+
+
+                                                    
+                                                     /* THIS IS SIDEBAR CSS */
+
+.side{
+    margin: 0% 2% 6% 3%;
+}
+input[type='checkbox']{
+ border:2px solid red;
+
+}
+.techname{
+   display: flex;
+   color:#390bb8;
+   font-family: 'Dancing Script', cursive;
+   font-weight: bolder;
+   letter-spacing: 3px;
+   font-size:250%;
+   text-shadow: 2px 2px 5px #000000;
+   margin-left:4%;
+   margin-bottom:2%;
+   float: left;
+}
+                                                      /* below this is side bar coding */
+
+   input[type='checkbox']
+   {
+   border:2px solid red;                    
+   }
+.sidebar
+{   position: fixed;
+    z-index: 2;
+    width:30%;
+    height:90%;
+    background-color:  rgba(218, 134, 78, 0.733);
+    left:0px;
+    transition:1s ;
+   transition-property: left;
+   box-shadow: 2px 2px 5px 5px #ffffff;
+}
+.icon
+{
+    margin-right: 10%;
+}
+.fa {
+    color: white;
+}
+div.show
+{  
+    display: flex;
+    position:absolute;
+    flex-direction: column;
+float: left;
+position: fixed;
+height: 100%;
+
+
+
+background-color:   rgba(218, 134, 78, 0.733);
+box-shadow: 2px 2px 5px 5px #ffffff;
+height: 100%;
+display: none;
+
+
+
+sidebar
+
+}
+.shift{
+    margin:5% 5% 150% 1%;
+}
+.image{
+    margin-top: 1%;
+    margin-left:5%; 
+    width: 78%;
+    height: 40%;
+    background-color: white;
+    box-shadow: -2px 2px 5px 5px #ffffff;
+}
+.innerimage
+{  
+   
+    height: 100%;
+    background: url(https://images.unsplash.com/photo-1513618364580-fe1596762e8e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdHVyYW50fGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+.cont{ 
+     margin: 4% 2% 0% 3%;
+     box-shadow: -2px 2px 5px 5px #ffffff;
+     width:80%;
+     height: fit-content;
+     padding: 4%;
+     background-color: rgb(21, 51, 53);
+     transition-property:width,background;
+     transition-property: color;
+     transition-delay: 0.5s;
+}
+.trans{
+     list-style: none;
+     text-decoration: none;
+     color: #ffffff;
+     text-align: center;
+     transition-property:background;
+}
+
+.cont:hover{
+  color:#690009  
+}
+.cont:hover{
+    width: 84%;
+    height: large;
+    background-color:rgba(101, 226, 29, 0.9);
+}
+#check{
+    display: none;
+}
+
+label
+{
+    margin-left: 2%;
+}
+#check:checked ~ .sidebar{
+ 
+ left:-33%;
+
+}
+#check:checked ~ div.show {
+display: flex;
+flex-direction: column;
+
+          
+}
+#check:checked ~  .show a{
+    margin-bottom: 20%;
+    }
+@media (max-width:860px)
+{
+  .sidebar{
+            width: 80%;
+          }
+
+          #check:checked ~ .sidebar{
+   
+            left:-81%
+          }
+   }
